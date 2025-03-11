@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Mikoshop" %></title>
+    <title><%= content_for(:title) || "MIKOshop" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -22,6 +22,14 @@
   </head>
 
   <body>
+    <nav>
+      <% if signed_in? %>
+        <%= current_user.email %>
+        <%= button_to "Sign out", sign_out_path, method: :delete %>
+      <% else %>
+        <%= link_to "Sign in", sign_in_path %>
+      <% end %>
+    </nav>
     <%= yield %>
   </body>
 </html>
