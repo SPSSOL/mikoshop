@@ -93,6 +93,7 @@
     <orderEntry type="library" scope="PROVIDED" name="net-sftp (v4.0.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.5.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-ssh (v7.3.0, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nifty-generators (v0.4.6, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.7.4, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.18.3, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ostruct (v0.6.1, ruby-3.2.2-p53) [gem]" level="application" />
@@ -106,7 +107,7 @@
     <orderEntry type="library" scope="PROVIDED" name="puma (v6.6.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="raabro (v1.4.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack (v3.1.11, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v3.1.12, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.2.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rackup (v2.2.1, ruby-3.2.2-p53) [gem]" level="application" />
@@ -180,6 +181,10 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="nifty:authentication" />
+        <option value="nifty:config" />
+        <option value="nifty:layout" />
+        <option value="nifty:scaffold" />
         <option value="resource" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
@@ -221,6 +226,10 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="nifty:authentication" />
+        <option value="nifty:config" />
+        <option value="nifty:layout" />
+        <option value="nifty:scaffold" />
         <option value="resource" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
