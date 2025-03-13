@@ -1,0 +1,2 @@
+class PromoBanner < ApplicationRecord
+end
