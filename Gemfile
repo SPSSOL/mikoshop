@@ -61,6 +61,7 @@ group :development do
   gem "web-console"
 
   gem "nifty-generators"
+  gem "annotate"
 end
 
 group :test do

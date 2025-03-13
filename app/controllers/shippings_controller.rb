@@ -65,6 +65,6 @@ class ShippingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shipping_params
-      params.expect(shipping: [ :order_id, :pickup_location, :status, :created_at ])
+      params.expect(shipping: [ :order_id, :pickup_location, :status ])
     end
 end
