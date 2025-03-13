@@ -73,6 +73,19 @@ button {
     border: solid 1px black;
     margin-top: 20px;
 }
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+
+p{
+    color: white; 
+}
 
 a img {
     border: none;
