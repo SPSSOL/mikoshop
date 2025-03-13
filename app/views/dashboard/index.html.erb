@@ -1,121 +1,34 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merch SPŠSOL</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: rgb(0, 44, 59);
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: rgb(0, 46, 63);
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 20px;
-        }
-        .products {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .product {
-            background-color: rgb(0, 46, 63);
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .product img {
-            max-width: 75%;
-            border-radius: 10px;
-        }
-        .price {
-            color: #FF4D4D;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        button {
-            background-color: rgb(0, 150, 204);
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #container {
-            width: 75%;
-            margin: 0 auto;
-            background-color: rgb(3, 109, 148);
-            padding: 20px 40px;
-            border: solid 1px black;
-            margin-top: 20px;
-    }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Merch SPŠSOL</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Mikiny</a></li>
-                <li><a href="#">Trička</a></li>
-                <li><a href="#">Obuv</a></li>
-                <li><a href="#">Doplňky</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h2>Vítejte na oficiálním e-shopu SPŠSOL!</h2>
-        <section class="products">
-            <article class="product">
-                <img src="https://spssol-merch.vercel.app/product/examples/mikina-voyage.png" alt="Mikina Voyage">
-                <h3>Mikina Voyage</h3>
-                <p>Prémiová mikina vhodná pro speciální příležitosti.</p>
-                <span class="price">849 Kč</span>
-                <button>Přidat do košíku</button>
-            </article>
-            <article class="product">
-                <img src="https://spssol-merch.vercel.app/product/examples/mikina-cape.png" alt="Mikina Cape">
-                <h3>Mikina Cape</h3>
-                <p>Super mikina vhodná pro všechny příležitosti.</p>
-                <span class="price">699 Kč</span>
-                <button>Přidat do košíku</button>
-            </article>
-            <article class="product">
-                <img src="https://spssol-merch.vercel.app/product/examples/tricko-base.png" alt="Tričko Base">
-                <h3>Tričko Base</h3>
-                <p>Super tričko vhodné pro všechny příležitosti.</p>
-                <span class="price">149 Kč</span>
-                <button>Přidat do košíku</button>
-            </article>
-            <article class="product">
-                <img src="https://spssol-merch.vercel.app/product/examples/tricko-heavy-new.png" alt="Tričko Heavy new">
-                <h3>Tričko Heavy new</h3>
-                <p>Super tričko vhodné pro všechny příležitosti.</p>
-                <span class="price">179 Kč</span>
-                <button>Přidat do košíku</button>
-            </article>
-        </section>
-    </main>
-</body>
-</html>
+<main>
+    <h2>Vítejte na oficiálním e-shopu SPŠSOL!</h2>
+    <section class="products">
+        <article class="product">
+            <%= image_tag "mikina-voyage.jpg" %>
+            <h3>Mikina Voyage</h3>
+            <p>Prémiová mikina vhodná pro speciální příležitosti.</p>
+            <span class="price">849 Kč</span>
+            <button>Přidat do košíku</button>
+        </article>
+        <article class="product">
+            <%= image_tag "mikina-cape.jpg" %>
+            <h3>Mikina Cape</h3>
+            <p>Super mikina vhodná pro všechny příležitosti.</p>
+            <span class="price">699 Kč</span>
+            <button>Přidat do košíku</button>
+        </article>
+        <article class="product">
+            <%= image_tag "tricko-base.jpg" %>
+            <h3>Tričko Base</h3>
+            <p>Super tričko vhodné pro všechny příležitosti.</p>
+            <span class="price">149 Kč</span>
+            <button>Přidat do košíku</button>
+        </article>
+        <article class="product">
+            <%= image_tag "tricko-heavy-new.jpg" %>
+            <h3>Tričko Heavy new</h3>
+            <p>Super tričko vhodné pro všechny příležitosti.</p>
+            <span class="price">179 Kč</span>
+            <button>Přidat do košíku</button>
+        </article>
+    </section>
+</main>
+

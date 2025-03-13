@@ -1,0 +1,19 @@
+<header>
+  <h1>Merch SPŠSOL</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Mikiny</a></li>
+      <li><a href="#">Trička</a></li>
+      <li><a href="#">Obuv</a></li>
+      <li><a href="#">Doplňky</a></li>
+      <li>
+        <% if signed_in? %>
+          <%= current_user.email %>
+          <%= button_to "Sign out", sign_out_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign in", sign_in_path %>
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+</header>

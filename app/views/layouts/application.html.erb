@@ -22,14 +22,7 @@
   </head>
 
   <body>
-    <nav>
-      <% if signed_in? %>
-        <%= current_user.email %>
-        <%= button_to "Sign out", sign_out_path, method: :delete %>
-      <% else %>
-        <%= link_to "Sign in", sign_in_path %>
-      <% end %>
-    </nav>
+    <%= render 'layouts/header' %>
 
     <div id="container">
       <% flash.each do |name, msg| %>
