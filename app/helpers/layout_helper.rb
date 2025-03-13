@@ -19,4 +19,8 @@ module LayoutHelper
   def javascript(*args)
     content_for(:head) { javascript_include_tag(*args) }
   end
+
+  def footer
+    content_for(:footer) { render 'layouts/footer' }
+  end
 end

@@ -23,6 +23,7 @@ header {
     padding: 20px;
     background-color: rgb(0, 46, 63);
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 nav ul {
     list-style: none;
@@ -47,6 +48,7 @@ main {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .product img {
     max-width: 75%;
@@ -64,6 +66,10 @@ button {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgb(0, 130, 184);
 }
 #container {
     width: 75%;
@@ -72,54 +78,41 @@ button {
     padding: 20px 40px;
     border: solid 1px black;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-h1{
+h1, h2, h3 {
     color: white;
 }
-h2{
-    color: white;
-}
-h3{
-    color: white;
-}
-
-p{
+p {
     color: white; 
 }
-
 a img {
     border: none;
 }
-
 a {
     color: #0000FF;
 }
-
 .clear {
     clear: both;
     height: 0;
     overflow: hidden;
 }
-
 #flash_notice, #flash_error, #flash_alert {
     padding: 5px 8px;
     margin: 10px 0;
 }
-
 #flash_notice {
     background-color: #CFC;
     border: solid 1px #6C6;
 }
-
 #flash_error, #flash_alert {
     background-color: #FCC;
     border: solid 1px #C66;
 }
-
 .fieldWithErrors {
     display: inline;
 }
-
 .error_messages {
     width: 400px;
     border: 2px solid #CF0000;
@@ -129,7 +122,6 @@ a {
     background-color: #f0f0f0;
     font-size: 12px;
 }
-
 .error_messages h2 {
     text-align: left;
     font-weight: bold;
@@ -139,11 +131,19 @@ a {
     background-color: #c00;
     color: #fff;
 }
-
 .error_messages p {
     margin: 8px 10px;
 }
-
 .error_messages ul {
     margin: 0;
+}
+footer {
+    background-color: rgb(0, 46, 63);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
