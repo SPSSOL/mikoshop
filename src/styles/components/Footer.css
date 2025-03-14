@@ -1,0 +1,47 @@
+.footer {
+  border-top: 1px solid var(--outline);
+  margin-left: -85px !important;
+  margin-right: -85px !important;
+  margin-top: 150px;
+  width: 109.8%;
+  height: 50px; /* adjust the height as needed */
+  text-align: center;
+}
+
+.footer h1{
+  font-size: 36px;
+  color: var(--bg-primary);
+}
+
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -25px;
+  color: var(--on-bg-item);
+}
+
+.footer h2 a{
+  color: var(--on-bg-item);
+}
+
+.footer hr{
+  border: 1px solid var(--outline);
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer a.admin{
+  background: var(--bg-primary);
+  color: var(--on-bg-primary);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all .2s;
+  border-radius: 50px;
+  font-weight: 600;
+
+}
+
+.footer a.admin i{
+  margin-left: 20px;
+}

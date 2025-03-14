@@ -15,6 +15,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    animation: transitionIn 1s;
 }
 header {
     display: flex;
@@ -91,7 +92,9 @@ a img {
     border: none;
 }
 a {
-    color: #0000FF;
+    color: #0f0fc4;
+    border-style: groove;
+    padding: 2px;
 }
 .clear {
     clear: both;
@@ -146,4 +149,14 @@ footer {
     width: 100%;
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }

@@ -1,0 +1,29 @@
+/* Import all used fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Default CSS for all pages */
+
+:root{
+    --bg-main: #111318; /* Main background */
+    --bg-submain: #37393e; /* Submain button background */
+    --on-bg-submain: #e2e2e9; /* Text color on submain background */
+    --bg-primary: #aac7ff; /* Primary button background */
+    --on-bg-primary: #0a305f; /* Text color on primary background */
+    --container-primary: #284777; /* Primary container background */ 
+    --on-container-primary: #d6e3ff; /* Text color on primary container */
+    --container-error: #93000a; /* Error container background */
+    --on-container-error: #ffdad6; /* Text color on error container */
+    --bg-item: #1e2024; /* Background for items */
+    --on-bg-item: #e2e2e9; /* Text color on item background */
+    --outline: #74777f; /* Outline color */
+    --price: #e46e6e; /* Item price color */
+}
+
+body{
+    width: 99%;
+    height: 100vh;
+    background: var(--bg-main);
+}
+
+main{
+    font-family: Inter, sans-serif;
+}

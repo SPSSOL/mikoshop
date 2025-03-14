@@ -1,0 +1,20 @@
+---
+import "../../styles/product.css";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Product from "../../components/Product.astro";
+
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+import Item from "../../components/Item.astro";
+---
+
+<MainLayout title="Mikina Voyage – E-shop SPŠSOL">
+    <head>
+        <ViewTransitions />
+    </head>
+    <Navbar />
+    <main>
+        <section class="path">Path</section>
+        <Product productId="mikina-voyage" name="Mikina Voyage" description="Prémiová mikina vhodná pro speciální příležitosti." price="849" imageUrl="/product/examples/mikina-voyage.png" optionsName="Velikost" options="S|M|L|XL" />
+    </main>
+</MainLayout>

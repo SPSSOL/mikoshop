@@ -1,0 +1,18 @@
+---
+
+import "../styles/components/NavbarItem.css"
+
+interface Props {
+    to: string;
+    icon: string;
+    name: string;
+}
+
+const { to, icon, name } = Astro.props;
+
+---
+
+<a class="navbaritem" href={`/${to}`}>
+    <i class={`fas fa-${icon}`}></i>
+    {name}
+  </a>

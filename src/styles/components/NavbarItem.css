@@ -1,0 +1,18 @@
+a.navbaritem{
+    color: var(--on-bg-item);
+    font-weight: 600;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    margin: 120px;
+    font-size: 17px;
+    transition: all .1s;
+  }
+  
+  a.navbaritem i{
+    margin-right: 8px;
+    color: var(--bg-primary);
+  }
+  
+  a.navbaritem:hover{
+    opacity: 80%;
+  }

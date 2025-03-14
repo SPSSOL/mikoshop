@@ -1,0 +1,35 @@
+main{
+    margin: 0 auto;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+
+section.content{
+    margin-top: 50px;
+}
+
+section.content h2.subtitle{
+    color: var(--bg-primary);
+    text-decoration: dashed;
+}
+
+section.content .grid {
+    margin: 0 auto;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 150px;
+  }
+
+main h1.title{
+    color: var(--bg-primary);
+}
+
+@media screen and (max-width: 950px){
+
+    section.content .grid{
+        gap: 40px;
+    }
+}

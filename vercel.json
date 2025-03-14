@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/preview",
+      "destination": "/",
+      "statusCode": 302
+    }
+  ]
+ }
