@@ -1,0 +1,27 @@
+---
+import "../../styles/components/navbar/Mobile.css";
+
+import ComponentLayout from "../../layouts/ComponentLayout.astro";
+---
+<ComponentLayout>
+    <nav class="navbarm">
+        <div class="logo">
+            <a href="#">MyLogo</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-regular fa-grip-lines"></i>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+</ComponentLayout>
+<script type="text/javascript">
+    document.getElementById('hamburger').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    });
+</script>

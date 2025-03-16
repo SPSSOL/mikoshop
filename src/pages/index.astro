@@ -1,0 +1,74 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Item from "../components/Item.astro";
+import Footer from "../components/Footer.astro";
+
+import "../styles/index.css";
+
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+---
+
+<MainLayout title="E-shop SPŠSOL">
+	<head>
+		<ViewTransitions />
+	</head>
+	<Navbar />
+	<main>
+		<h1 class="title">Vítejte na oficiálním e-shopu SPŠSOL!</h1>
+		<section class="content">
+			<h2 class="subtitle">Nejprodávanější</h2>
+			<div class="grid">
+				<!-- @ts-ignore -->
+				<Item
+					name="Mikina Voyage"
+					description="Prémiová mikina vhodná pro speciální příležitosti."
+					price="849"
+					category="mikiny"
+					model="voyage"
+					productId="mikina-voyage"
+					imageUrl="/product/examples/mikina-voyage.png"
+					optionsName="Velikost"
+					options="S|M|L|XL"
+				/>
+				<!-- @ts-ignore -->
+				<Item
+					name="Mikina Cape"
+					description="Super mikina vhodná pro všechny příležitosti."
+					price="699"
+					category="mikiny"
+					model="cape"
+					productId="mikina-cape"
+					imageUrl="/product/examples/mikina-cape.png"
+					optionsName="Velikost"
+					options="S|M|L|XL"
+				/>
+				<!-- @ts-ignore -->
+				<Item
+					name="Tričko Base"
+					description="Super tričko vhodné pro všechny příležitosti."
+					price="149"
+					category="tricka"
+					model="base"
+					productId="tricko-base"
+					imageUrl="/product/examples/tricko-base.png"
+					optionsName="Velikost"
+					options="S|M|L|XL"
+				/>
+				<!-- @ts-ignore -->
+				<Item
+					name="Tričko Heavy new"
+					description="Super tričko vhodné pro všechny příležitosti."
+					price="179"
+					category="tricka"
+					model="heavy-new"
+					productId="tricko-heavy-new"
+					imageUrl="/product/examples/tricko-heavy-new.png"
+					optionsName="Velikost"
+					options="S|M|L|XL"
+				/>
+			</div>
+		</section>
+		<Footer />
+	</main>
+</MainLayout>

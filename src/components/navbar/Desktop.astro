@@ -1,0 +1,51 @@
+---
+import ComponentLayout from "../../layouts/ComponentLayout.astro";
+import NavbarItem from "../NavbarItem.astro";
+
+import "../../styles/components/navbar/Desktop.css"
+---
+<ComponentLayout>
+    <section class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-content">
+        <span class="logo">
+          <a href="/">Merch SPŠSOL</a>
+        </span>
+                <span class="search">
+          <form id="searchform" action="vyhledavani/">
+            <input type="text" id="searchbox" placeholder="Vyhledávání" />
+            <button type="submit" title="Nefunguje" disabled
+            ><i class="fa-solid fa-magnifying-glass"></i></button
+            >
+          </form>
+        </span>
+                <span class="user">
+          <span class="profile">
+            <a class="snipcart-customer-signin">
+              <img class="userimage" src="/user/usericon.png" />
+            </a>
+          </span>
+          <span class="center"
+          ><i class="fa-solid fa-grip-lines-vertical"></i></span
+          >
+          <span class="cart">
+            <a title="Košík" class="snipcart-checkout">
+              <i class="fa-regular fa-basket-shopping-simple"></i>
+            </a>
+              <!--<span class="cartinfo">
+                <span>
+                  <span class="snipcart-items-count"></span>
+                </span>
+            </span> -->
+          </span>
+        </span>
+            </div>
+            <div class="navbar-second">
+                <NavbarItem name="Mikiny" to="mikiny" icon="user-hoodie" />
+                <NavbarItem name="Trička" to="tricka" icon="shirt" />
+                <NavbarItem name="Obuv" to="obuv" icon="shoe-prints" />
+                <NavbarItem name="Doplňky" to="doplnky" icon="pencil" />
+            </div>
+        </div>
+    </section>
+</ComponentLayout>

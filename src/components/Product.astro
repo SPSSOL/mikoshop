@@ -1,0 +1,35 @@
+---
+
+import "../styles/components/Product.css";
+
+import ComponentLayout from "../layouts/ComponentLayout.astro"
+import AddToCart from "./buttons/AddToCart.astro";
+
+interface Props {
+    imageUrl: string;
+    name: string;
+    description: string;
+    price: string;
+    productId: string;
+    optionsName: string;
+    options: string;
+}
+
+const { imageUrl, name, description, price, productId, optionsName, options} = Astro.props;
+---
+
+<ComponentLayout>
+    <section class="product">
+        <div class="image">
+            <img transition:animate="fade" src={imageUrl} />
+        </div>
+        <div class="info">
+            <div class="content">
+                <h1 class="title">{name}</h1>
+                <p class="description">{description}</p>
+                <h2 class="price">{price} Kč</h2>
+                <AddToCart description={description} imgSrc={imageUrl} name={name} price={price} productId={productId} optionsName={optionsName} options={options} />
+            </div>
+        </div>
+    </section>
+</ComponentLayout>

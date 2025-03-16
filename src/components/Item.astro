@@ -1,0 +1,45 @@
+---
+import "../styles/components/Item.css";
+
+import AddToCartButton from "../components/buttons/AddToCart.astro";
+
+interface Props {
+    imageUrl: string;
+    name: string;
+    description: string;
+    price: string;
+    model: string;
+    productId: string;
+    category: string;
+    optionsName: string;
+    options: string;
+}
+
+const { imageUrl, name, description, price, model, productId, category, optionsName, options } = Astro.props;
+---
+
+<div class="item">
+    <a href={`${category}/${model}`}>
+    <section class="image">
+        <img
+            id="productimage"
+            class="product"
+            src={imageUrl}
+            alt="Couldn't load image."
+            onerror="this.src='/images/error/nophoto.svg'; this.onerror=null;"
+        />
+    </section>
+    <h1 class="name">{name}</h1>
+    <p class="description">{description}</p>
+    <h2 class="price">{price} Kč</h2>
+    <AddToCartButton
+        name={name}
+        description={description}
+        price={price}
+        imgSrc={imageUrl}
+        productId={productId}
+        optionsName={optionsName}
+        options={options}
+    />
+</a>
+</div>

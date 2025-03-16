@@ -1,0 +1,21 @@
+{
+  "name": "spssol-merch",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.2",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@material/web": "^2.1.0",
+    "aos": "^2.3.4",
+    "astro": "^4.12.2",
+    "typescript": "^5.5.4"
+  }
+}

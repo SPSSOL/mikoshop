@@ -1,0 +1,45 @@
+div.item{
+    background: var(--bg-item);
+    max-width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 100px 14px;
+    color: var(--on-bg-item);
+}
+
+div.item a:not(.button){
+    text-decoration: none;
+    color: var(--on-bg-item);
+}
+
+div.item a:hover div.item{
+    border: 1px solid var(--outline);
+}
+
+div.item section.image{
+    margin-top: -70px !important;
+    width: 260px !important;
+    height: 260px !important;
+    margin: 0 auto;
+    border-radius: 22px;
+}
+
+div.item section.image img{
+    width: 260px;
+    height: 260px;
+    border-radius: 22px;
+    border: 1px solid var(--outline);
+}
+
+div.item h1.name{
+    font-weight: 800;
+}
+
+div.item p.description{
+    font-weight: 300;
+}
+
+div.item h2.price{
+    margin-top: 35px;
+    color: var(--price);
+}

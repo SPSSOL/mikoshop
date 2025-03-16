@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  const searchForm = document.getElementById('searchform');
+  searchForm.addEventListener('submit', (event) => {
+  event.preventDefault();  // Prevent default form submission
+
+  const searchBox = document.getElementById('searchbox');
+  const searchQuery = searchBox.value.trim();  // Get and trim search query
+
+  // Your search logic here
+  console.log("Search Query:", searchQuery);
+
+  // Handle the search query (e.g., filter data, redirect to search page)
+});
+</script>

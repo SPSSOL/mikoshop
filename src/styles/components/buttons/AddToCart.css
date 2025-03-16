@@ -1,0 +1,30 @@
+div.button{
+    margin-top: 50px;
+    margin-bottom: -55px;
+}
+
+a.button{
+    background: var(--bg-primary);
+    color: var(--on-bg-primary);
+    padding: 14px 40px;
+    max-width: 100px !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all .1s;
+}
+
+a.button i{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+a.button:hover{
+    opacity: 85%;
+    cursor: pointer;
+}
+
+a.button:active{
+    opacity: 70%;
+}

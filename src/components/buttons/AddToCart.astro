@@ -1,0 +1,32 @@
+---
+// @ts-ignore
+import "../../styles/components/buttons/AddToCart.css";
+// @ts-ignore
+interface Props {
+    imgSrc: string;
+    name: string;
+    description: string;
+    price: string;
+    productId: string;
+    optionsName: string;
+    options: string;
+}
+// @ts-ignore
+const { imgSrc, name, description, price, productId, optionsName, options } = Astro.props;
+---
+
+<div class="button">
+    <a
+        class="snipcart-add-item button"
+        data-item-id={productId}
+        data-item-price={price}
+        data-item-description={description}
+        data-item-image={imgSrc}
+        data-item-name={name}
+        data-item-custom1-name={optionsName}
+        data-item-custom1-options={options}
+     >
+        <i class="fa-regular fa-basket-shopping-plus"></i>
+        Přidat do košíku
+    </a>
+</div>
