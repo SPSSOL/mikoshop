@@ -9,34 +9,34 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
-body {
-    background-color: rgb(0, 44, 59);
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(0, 46, 63);
-    color: white;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-main {
-    padding: 20px;
-}
+/*body {*/
+/*    background-color: rgb(0, 44, 59);*/
+/*    color: white;*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 20px;*/
+/*    background-color: rgb(0, 46, 63);*/
+/*    color: white;*/
+/*}*/
+/*nav ul {*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    gap: 15px;*/
+/*}*/
+/*nav a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*}*/
+/*main {*/
+/*    padding: 20px;*/
+/*}*/
 .products {
     display: flex;
     gap: 20px;
@@ -57,30 +57,30 @@ main {
     font-size: 18px;
     font-weight: bold;
 }
-button {
-    background-color: rgb(0, 150, 204);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#container {
-    width: 75%;
-    margin: 0 auto;
-    background-color: rgb(3, 109, 148);
-    padding: 20px 40px;
-    border: solid 1px black;
-    margin-top: 20px;
-}
+/*button {*/
+/*    background-color: rgb(0, 150, 204);*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*}*/
+/*#container {*/
+/*    width: 75%;*/
+/*    margin: 0 auto;*/
+/*    background-color: rgb(3, 109, 148);*/
+/*    padding: 20px 40px;*/
+/*    border: solid 1px black;*/
+/*    margin-top: 20px;*/
+/*}*/
 
-a img {
-    border: none;
-}
+/*a img {*/
+/*    border: none;*/
+/*}*/
 
-a {
-    color: #0000FF;
-}
+/*a {*/
+/*    color: #0000FF;*/
+/*}*/
 
 .clear {
     clear: both;

@@ -1,19 +1,53 @@
-<header>
-  <h1>Merch SPŠSOL</h1>
-  <nav>
+<!--<header>-->
+<!--  <h1>Merch SPŠSOL</h1>-->
+<!--  <nav>-->
+<!--    <ul>-->
+<!--      <li><a href="#">Mikiny</a></li>-->
+<!--      <li><a href="#">Trička</a></li>-->
+<!--      <li><a href="#">Obuv</a></li>-->
+<!--      <li><a href="#">Doplňky</a></li>-->
+<!--      <li>-->
+        <%# if signed_in? %>
+          <%#= current_user.email %>
+          <%#= button_to "Sign out", sign_out_path, method: :delete %>
+        <%# else %>
+          <%#= link_to "Sign in", sign_in_path %>
+        <%# end %>
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--</header>-->
+
+<!-- Header -->
+<div id="header">
+  <!-- Nav -->
+  <nav id="nav">
     <ul>
-      <li><a href="#">Mikiny</a></li>
-      <li><a href="#">Trička</a></li>
-      <li><a href="#">Obuv</a></li>
-      <li><a href="#">Doplňky</a></li>
+      <li class="current"><a href="index.html">Home</a></li>
       <li>
-        <% if signed_in? %>
-          <%= current_user.email %>
-          <%= button_to "Sign out", sign_out_path, method: :delete %>
-        <% else %>
-          <%= link_to "Sign in", sign_in_path %>
-        <% end %>
+        <a href="#">Dropdown</a>
+        <ul>
+          <li><a href="#">Lorem dolor</a></li>
+          <li><a href="#">Magna phasellus</a></li>
+          <li><a href="#">Etiam sed tempus</a></li>
+          <li>
+            <a href="#">Submenu</a>
+            <ul>
+              <li><a href="#">Lorem dolor</a></li>
+              <li><a href="#">Phasellus magna</a></li>
+              <li><a href="#">Magna phasellus</a></li>
+              <li><a href="#">Etiam nisl</a></li>
+              <li><a href="#">Veroeros feugiat</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Veroeros feugiat</a></li>
+        </ul>
       </li>
+      <li><a href="left-sidebar.html">Left Sidebar</a></li>
+      <li><a href="right-sidebar.html">Right Sidebar</a></li>
+      <li><a href="two-sidebar.html">Two Sidebar</a></li>
+      <li><a href="no-sidebar.html">No Sidebar</a></li>
     </ul>
   </nav>
-</header>
+
+</div>
