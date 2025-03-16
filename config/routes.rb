@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :promo_banners
+  resources :shippings
+  resources :payments
+  resources :discounts
+  resources :order_items
+  resources :orders
+  resources :stocks
+  resources :categories
+  resources :products
   get "dashboard/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
