@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f7f7f7 url("images/bg01.png");
+		background: #1f3dff url("images/bg01.png");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -110,7 +110,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		color: #37c0fb;
+		color: #006b9a;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -2011,8 +2011,8 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
-		background: #fff;
-		border: solid 1px #e0e0e0;
+		background: #577cfa;
+		border: solid 1px #051b8f;
 		border-radius: 5px;
 		color: inherit;
 		display: block;
@@ -2532,7 +2532,7 @@ input, select, textarea {
 	#header {
 		text-align: center;
 		padding: 3em 0 0 0;
-		background-color: #fff;
+		background-color: #0a8fc4;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
 		background-size: 100% 6em,					100% 6em,					auto;
@@ -2724,11 +2724,11 @@ input, select, textarea {
 	}
 
 		.wrapper.style1 {
-			background: #fff;
+			background: #515afc;
 		}
 
 		.wrapper.style2 {
-			background-color: #fff;
+			background-color: #b21f1f;
 			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");
 			background-position: top left,						bottom left,					top left;
 			background-size: 100% 6em,						100% 6em,						auto;
@@ -2736,7 +2736,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #37c0fb;
+			background-color: #00810d;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -3249,7 +3249,7 @@ input, select, textarea {
 			}
 
 			header.major {
-				padding: 0 20px;
+				padding: 0 10px;
 			}
 
 				header.major h2 {

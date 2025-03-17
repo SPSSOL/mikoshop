@@ -1,52 +1,52 @@
-<!--<header>-->
-<!--  <h1>Merch SPŠSOL</h1>-->
-<!--  <nav>-->
-<!--    <ul>-->
-<!--      <li><a href="#">Mikiny</a></li>-->
-<!--      <li><a href="#">Trička</a></li>-->
-<!--      <li><a href="#">Obuv</a></li>-->
-<!--      <li><a href="#">Doplňky</a></li>-->
-<!--      <li>-->
-        <%# if signed_in? %>
-          <%#= current_user.email %>
-          <%#= button_to "Sign out", sign_out_path, method: :delete %>
-        <%# else %>
-          <%#= link_to "Sign in", sign_in_path %>
-        <%# end %>
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </nav>-->
-<!--</header>-->
-
 <!-- Header -->
 <div id="header">
   <!-- Nav -->
   <nav id="nav">
     <ul>
-      <li class="current"><a href="index.html">Home</a></li>
-      <li>
-        <a href="#">Dropdown</a>
-        <ul>
-          <li><a href="#">Lorem dolor</a></li>
-          <li><a href="#">Magna phasellus</a></li>
-          <li><a href="#">Etiam sed tempus</a></li>
+      <li class="current"><%= link_to "Domů", root_path %></li>
+      <li><a href="#">Mikiny</a></li>
+      <li><a href="#">Trička</a></li>
+      <li><a href="#">Obuv</a></li>
+      <li><a href="#">Doplňky</a></li>
+
+
+      <% if signed_in? %>
+        <% if current_user.admin? %>
           <li>
-            <a href="#">Submenu</a>
+            <a href="#">Administrace</a>
             <ul>
-              <li><a href="#">Lorem dolor</a></li>
-              <li><a href="#">Phasellus magna</a></li>
-              <li><a href="#">Magna phasellus</a></li>
-              <li><a href="#">Etiam nisl</a></li>
+              <li><%= link_to "Kategorie", categories_path %></li>
+              <li><%= link_to "Produkty", products_path %></li>
+              <li><%= link_to "Zásoby", stocks_path %></li>
+              <li></li>
+              <li><%= link_to "Slevy", discounts_path %></li>
+              <li><%= link_to "Promo banery", promo_banners_path %></li>
+              <li></li>
+              <li><%= link_to "Objednávky", orders_path %></li>
+              <li><%= link_to "Shipping", shippings_path %></li>
+              <li><%= link_to "Platby", payments_path %></li>
+              <li></li>
+              <li><%= link_to "Uživatelé", users_path %></li>
+
+<!--              <li>-->
+<!--                <a href="#">Submenu</a>-->
+<!--                <ul>-->
+<!--                  <li><a href="#">Lorem dolor</a></li>-->
+<!--                  <li><a href="#">Phasellus magna</a></li>-->
+<!--                  <li><a href="#">Magna phasellus</a></li>-->
+<!--                  <li><a href="#">Etiam nisl</a></li>-->
+<!--                  <li><a href="#">Veroeros feugiat</a></li>-->
+<!--                </ul>-->
+<!--              </li>-->
               <li><a href="#">Veroeros feugiat</a></li>
             </ul>
           </li>
-          <li><a href="#">Veroeros feugiat</a></li>
-        </ul>
-      </li>
-      <li><a href="left-sidebar.html">Left Sidebar</a></li>
-      <li><a href="right-sidebar.html">Right Sidebar</a></li>
-      <li><a href="two-sidebar.html">Two Sidebar</a></li>
-      <li><a href="no-sidebar.html">No Sidebar</a></li>
+        <% end %>
+        <li><a><%= current_user.email %></a></li>
+        <li><%= button_to "Sign out", sign_out_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign in", sign_in_path %></li>
+      <% end %>
     </ul>
   </nav>
 
