@@ -9,12 +9,12 @@
 #   end
 p "Zacinam seed"
 if User.all.blank?
-  User.create(email: 'padrta.jan@spssol.cz', encrypted_password: 'abcd1234', admin: true)
-  User.create(email: 'pavlu.tomas@spssol.cz', encrypted_password: 'abcd1234', admin: true)
-  User.create(email: 'vitek.zdenek@spssol.cz', encrypted_password: 'abcd1234', admin: true)
-  User.create(email: 'tomasek.jiri@spssol.cz', encrypted_password: 'abcd1234', admin: true)
-  User.create(email: 'balek.borek@spssol.cz', encrypted_password: 'abcd1234', admin: true)
-  User.create(email: 'navsteva@spssol.cz', encrypted_password: 'abcd1234', admin: false)
+  User.create(email: 'padrta.jan@spssol.cz', password: 'abcd1234', admin: true)
+  User.create(email: 'pavlu.tomas@spssol.cz', password: 'abcd1234', admin: true)
+  User.create(email: 'vitek.zdenek@spssol.cz', password: 'abcd1234', admin: true)
+  User.create(email: 'tomasek.jiri@spssol.cz', password: 'abcd1234', admin: true)
+  User.create(email: 'balek.borek@spssol.cz', password: 'abcd1234', admin: true)
+  User.create(email: 'navsteva@spssol.cz', password: 'abcd1234', admin: false)
 end
 
 if Category.all.blank?
