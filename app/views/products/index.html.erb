@@ -1,16 +1,31 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Products" %>
-
-<h1>Products</h1>
-
 <div id="products">
   <% @products.each do |product| %>
-    <%= render product %>
-    <p>
-      <%= link_to "Show this product", product %>
-    </p>
+    <section class="col-4 col-12-narrower">
+      <div class="box highlight">
+        <i class="icon solid major fa-paper-plane"></i>
+        <h3><%= product.name %></h3>
+        <p>
+          <strong>Description:</strong>
+          <%= product.description %>
+        </p>
+
+        <p>
+          <strong>Cena:</strong>
+          <%= format_mena product.price %>
+        </p>
+
+        <p>
+          <strong>Kategorie:</strong>
+          <%= product.category.name %>
+        </p>
+
+        <p>
+          <%= link_to "Show this product", product %>
+        </p>
+      </div>
+    </section>
+
   <% end %>
 </div>
-
-<%= link_to "New product", new_product_path %>

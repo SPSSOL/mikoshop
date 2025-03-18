@@ -3,6 +3,8 @@
   <!-- Nav -->
   <nav id="nav">
     <ul>
+      <li><%= image_tag asset_path('logo_spssol.png') %></li>
+      <li><a>SPŠS OLOMOUC Merch</a></li>
       <li class="current"><%= link_to "Domů", root_path %></li>
       <li><a href="#">Mikiny</a></li>
       <li><a href="#">Trička</a></li>
@@ -17,6 +19,7 @@
             <ul>
               <li><%= link_to "Kategorie", categories_path %></li>
               <li><%= link_to "Produkty", products_path %></li>
+              <li><%= link_to "PŘIDAT PRODUKT", new_product_path %></li>
               <li><%= link_to "Zásoby", stocks_path %></li>
               <li></li>
               <li><%= link_to "Slevy", discounts_path %></li>
